@@ -1,0 +1,8 @@
+﻿iptables -I DOCKER-USER -i ens33 -p tcp --dport 3000 -j DROP
+iptables -I DOCKER-USER -i ens33 -p tcp --dport 9100 -j DROP
+iptables -I DOCKER-USER -i ens33 -p tcp --dport 9090 -j DROP
+iptables -I DOCKER-USER -i ens33 -p tcp --dport 8080 -j DROP
+iptables -I DOCKER-USER -i ens33 -p tcp --dport 8081 -j DROP
+iptables -I DOCKER-USER -i ens33 -p tcp --dport 9990 -j DROP
+
+#ens33 - внешний интерфейс
